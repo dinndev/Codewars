@@ -13,10 +13,9 @@ function scoreboard(string) {
       eight: 8,
       nine: 9,
     }
-    const words = string.split(' ');
-    words.forEach((word , i) => {
+   string.split(' ').forEach(v => {
       for(let score in number){
-        if(word === score){
+        if(v === score){
            nums.push(number[score]);
         }
       }
